@@ -19,4 +19,8 @@ https://github.com/wesley-trust/GraphAPI
 https://resources.azure.com/ 
 
 # ad conditional access policies
-https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure
+Conditional Access APIs and PowerShell - Azure Active Directory | Microsoft Docs
+azure-ad-conditional-access-apis/readme.md at main · Azure-Samples/azure-ad-conditional-access-apis (github.com)
+Overview of Microsoft Graph - Microsoft Graph | Microsoft Docs
+
+
