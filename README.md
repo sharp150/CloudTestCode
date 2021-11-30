@@ -17,3 +17,6 @@ https://github.com/wesley-trust/GraphAPI
 
 #azure Resource Explorer
 https://resources.azure.com/ 
+
+# ad conditional access policies
+https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure
