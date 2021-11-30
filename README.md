@@ -1,2 +1,2 @@
 # CloudTestCode
-Azure Work
+Azure Work mostly
