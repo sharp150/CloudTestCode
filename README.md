@@ -23,4 +23,5 @@ Conditional Access APIs and PowerShell - Azure Active Directory | Microsoft Docs
 azure-ad-conditional-access-apis/readme.md at main · Azure-Samples/azure-ad-conditional-access-apis (github.com)
 Overview of Microsoft Graph - Microsoft Graph | Microsoft Docs
 
-
+ https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/graphapi
+https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-apis
