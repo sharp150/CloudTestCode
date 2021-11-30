@@ -1,20 +1,23 @@
 {
-    "connectors": [
-    {
-        "kind": "AzureSecurityCenter",
+    "connectors": {
+        "id": "/subscriptions/3827f162-438b-4b6b-b6c1-36d4e495bfff/resourceGroups/rg-sentinel-management/providers/Microsoft.OperationalInsights/workspaces/la-example-utv-weu/providers/Microsoft.SecurityInsights/dataConnectors/dbca84b8-f6be-49a9-86d2-7f9cd655f0ce",
+        "name": "dbca84b8-f6be-49a9-86d2-7f9cd655f0ce",
+        "etag": "c0b71b49-ac89-4dfb-950e-9d5cf049acb3",
+        "type": "Microsoft.SecurityInsights/dataConnectors",
+        "kind": "Office365",
         "properties": {
-            "subscriptionId": "subscriptionId",
             "dataTypes": {
-                "alerts": {
-                    "state": "Enabled"
+                "sharePoint": {
+                    "state": "enabled"
+                },
+                "exchange": {
+                    "state": "disabled"
+                },
+                "teams": {
+                    "state": "disabled"
                 }
-            }
+            },
+            "tenantId": "51b55590-0d97-4667-ad7d-bf462b8ead97"
         }
-    },
-    {
-        "kind": "AzureActivityLog",
-        "properties": {
-            "linkedResourceId": "/subscriptions/subscriptionId/providers/microsoft.insights/eventtypes/management"
-        }
-    }]
+    }
 }

@@ -12,8 +12,10 @@ param(
 $artifactName = "ConnectorsFile"
 
 #Build the full path for the analytics rule file
-$artifactPath = Join-Path $env:Pipeline_Workspace $artifactName 
-$connectorsFilePath = Join-Path $artifactPath $ConnectorsFile
+#$artifactPath = Join-Path $env:Pipeline_Workspace $artifactName 
+#$connectorsFilePath = Join-Path $artifactPath $ConnectorsFile
+$connectorsFilePath = $ConnectorsFile 
+
 
 
 #Resource URL to authentincate against
