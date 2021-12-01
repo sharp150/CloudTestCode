@@ -4,7 +4,7 @@ $Parameters = @{
     ClientSecret = ''
     FilePath = 'C:\Temp\Conditional Access Backup.json'
     SkipReportOnlyMode = $false
-    DeleteAllExistingPolicies = $true
+    DeleteAllExistingPolicies = $false
 }
 
 Import-DCConditionalAccessPolicyDesign @Parameters

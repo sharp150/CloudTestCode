@@ -1,6 +1,6 @@
 # Export your Conditional Access policies to a JSON file for backup.
 $Parameters = @{
-    ClientID = '6d56e495-a025-4e63-b0a7-3d759624fd52'
+    ClientID = '2612879e-30c5-45f3-9fcd-dc890cf914aa'
     ClientSecret = ''
     FilePath = 'C:\Temp\Conditional Access Backup.json'
 }

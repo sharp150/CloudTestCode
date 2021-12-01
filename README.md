@@ -25,3 +25,8 @@ Overview of Microsoft Graph - Microsoft Graph | Microsoft Docs
 
  https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/graphapi
 https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-apis
+https://github.com/Azure-Samples/azure-ad-conditional-access-apis
+
+
+# prompting for admin consent
+https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-sign-in-unexpected-user-consent-error#requesting-not-authorized-permissions-error

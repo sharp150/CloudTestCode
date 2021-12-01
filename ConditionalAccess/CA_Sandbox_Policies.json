@@ -1,0 +1,3821 @@
+[
+    {
+        "displayName": "CyberArk Recon Restriction",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "3106b13d-5f2c-4d39-9b87-633a58a3c9da"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Office 365 Application Access (Not Teams) - Client App - macOS - Non Trusted - Block",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "exchangeActiveSync",
+                "mobileAppsAndDesktopClients",
+                "other"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "Office365"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "macOS"
+                ],
+                "excludePlatforms": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "b9e760f6-4440-4f8c-8413-4b1dbfb08123",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "669ddac7-0713-4718-a67d-6e220d097d65",
+                    "8f70cf54-0294-43d8-8759-5c11896b6a2c",
+                    "9b749e8e-99a7-402f-a8dd-6de37de01531"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Office 365 Application Access (Teams) - Web App - macOS - Non Trusted - Block",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "cc15fd57-2c6c-4117-a88c-83b1d56b4bbe"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "macOS"
+                ],
+                "excludePlatforms": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "9b749e8e-99a7-402f-a8dd-6de37de01531",
+                    "8f70cf54-0294-43d8-8759-5c11896b6a2c",
+                    "669ddac7-0713-4718-a67d-6e220d097d65"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Office 365 Application Access (Not Teams) - Web App - AzurePalo - Block",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "94c63fef-13a3-47bc-8074-75af8c65887a",
+                    "905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d",
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "2ccfca2e-40e5-4bcd-8d85-592356f44883",
+                    "c25acf62-7c53-46b5-9f6c-9e656941ba26"
+                ],
+                "excludeLocations": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Office 365 Application Access (Not Teams) - Web App - macOS - Non Trusted - Block",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "Office365"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "macOS"
+                ],
+                "excludePlatforms": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "9b749e8e-99a7-402f-a8dd-6de37de01531",
+                    "8f70cf54-0294-43d8-8759-5c11896b6a2c",
+                    "669ddac7-0713-4718-a67d-6e220d097d65"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Block - Except on Prem - MFA Registration",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [],
+                "excludeApplications": [],
+                "includeUserActions": [
+                    "urn:user:registersecurityinfo"
+                ],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "1ec5e76d-dc53-4fbb-8166-4901e32f7824",
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d",
+                    "ec206482-2245-48a2-bce2-b3d471dc7935",
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "669ddac7-0713-4718-a67d-6e220d097d65"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Force MFA - Except On Prem - Azure Portal",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "77f24300-deab-4bf3-ba99-3ee336c62234",
+                    "1ec5e76d-dc53-4fbb-8166-4901e32f7824",
+                    "131d467a-112a-47f8-a840-529434fffa30",
+                    "85205b6b-efde-4b5d-bc43-54484d7ddd7f",
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "2ccfca2e-40e5-4bcd-8d85-592356f44883",
+                    "c25acf62-7c53-46b5-9f6c-9e656941ba26",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Office 365 Application Access (All) - Web App - Windows - Require Hybrid Joined",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "Office365"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "windows"
+                ],
+                "excludePlatforms": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Office 365 Application Access (Not Teams) - Client App - AzurePalo - Block",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "exchangeActiveSync",
+                "mobileAppsAndDesktopClients",
+                "other"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "94c63fef-13a3-47bc-8074-75af8c65887a",
+                    "905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "2ccfca2e-40e5-4bcd-8d85-592356f44883",
+                    "c25acf62-7c53-46b5-9f6c-9e656941ba26"
+                ],
+                "excludeLocations": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Force MFA - Intune Registration",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Platform - Windows Phone - Block",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "00000009-0000-0000-c000-000000000000",
+                    "00000004-0000-0ff1-ce00-000000000000"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "all"
+                ],
+                "excludePlatforms": [
+                    "android",
+                    "iOS",
+                    "windows",
+                    "macOS"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "[SharePoint admin center]Block access from apps on unmanaged devices - 2021/11/26",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "00000003-0000-0ff1-ce00-000000000000"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "cea51fba-e524-4bda-aa13-0ab9af8cd7ec",
+                    "8cde8f99-3127-4b4e-87a0-986d463f2a9e",
+                    "f0d4eb1e-9233-4a4c-adc3-6ef6bc8d0377"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "compliantDevice",
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "IFDL_LimitByIP",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "all"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "Office365"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [
+                    "94aedfac-4d2b-46fc-98ab-98092e4d5c4e"
+                ],
+                "includeGroups": [
+                    "da566dff-a5dc-449c-9d4c-3962278839c7"
+                ],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "669ddac7-0713-4718-a67d-6e220d097d65",
+                    "16ed8415-10d9-4ed1-9860-cc500a906252",
+                    "8cf37997-c5de-496f-b5e7-24ce0f3e71d8"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Force MFA -  Azure Palo - Excluding specific Applications",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "00000004-0000-0ff1-ce00-000000000000",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "00000009-0000-0000-c000-000000000000",
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "499b84ac-1321-427f-aa17-267ca6975798",
+                    "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+                ],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "2ccfca2e-40e5-4bcd-8d85-592356f44883",
+                    "c25acf62-7c53-46b5-9f6c-9e656941ba26"
+                ],
+                "excludeLocations": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Force MFA - Non Trusted IPs",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [
+                    "00000012-0000-0000-c000-000000000000"
+                ],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "131d467a-112a-47f8-a840-529434fffa30",
+                    "d22813a9-54df-409a-9e2b-60e5c98275bc",
+                    "1ec5e76d-dc53-4fbb-8166-4901e32f7824",
+                    "e4b9a8bd-dfed-40cc-b9bd-de6609163b98",
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d",
+                    "85205b6b-efde-4b5d-bc43-54484d7ddd7f"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Unsupported Device Type - Block",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [
+                    "00000012-0000-0000-c000-000000000000"
+                ],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "131d467a-112a-47f8-a840-529434fffa30",
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "all"
+                ],
+                "excludePlatforms": [
+                    "android",
+                    "iOS",
+                    "windows",
+                    "macOS"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Allow Access from Trusted IPs only (else require MFA)",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "exchangeActiveSync",
+                "browser",
+                "mobileAppsAndDesktopClients",
+                "other"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [
+                    "00000012-0000-0000-c000-000000000000"
+                ],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d",
+                    "85205b6b-efde-4b5d-bc43-54484d7ddd7f"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "669ddac7-0713-4718-a67d-6e220d097d65",
+                    "8f70cf54-0294-43d8-8759-5c11896b6a2c",
+                    "9b749e8e-99a7-402f-a8dd-6de37de01531",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Force MFA - Administrators",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [
+                    "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                    "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                    "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                    "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                    "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                    "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                    "3edaf663-341e-4475-9f94-5c398ef6c070",
+                    "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                    "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                    "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                    "158c047a-c907-4556-b7ef-446551a6b5f7",
+                    "7698a772-787b-4ac8-901f-60d6b08affd2",
+                    "17315797-102d-40b4-93e0-432062caca18",
+                    "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                    "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                    "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                    "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                    "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                    "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                    "44367163-eba1-44c3-98af-f5787879f96a",
+                    "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                    "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                    "62e90394-69f5-4237-9190-012177145e10",
+                    "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                    "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                    "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                    "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                    "74ef975b-6605-40af-a5d2-b9539d836353",
+                    "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                    "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                    "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                    "2b745bdf-0803-4d80-aa65-822c4493daac",
+                    "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                    "a9ea8996-122f-4c74-9520-8edcd192826c",
+                    "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                    "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                    "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                    "4a5d8f65-41da-4de4-8968-e035b65339cf",
+                    "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                    "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                    "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                    "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                    "5d6b6bb7-de71-4623-b4af-96380a352509",
+                    "f023fd81-a637-4b56-95fd-791ac0226033",
+                    "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                    "75941009-915a-4869-abe7-691bff18279e",
+                    "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                    "f70938a0-fc10-4177-9e90-2178f8765737",
+                    "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                    "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                    "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                    "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+                ],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Office 365 Application Access (Teams) - Client App - macOS - Non Trusted - Block",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "exchangeActiveSync",
+                "mobileAppsAndDesktopClients",
+                "other"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "cc15fd57-2c6c-4117-a88c-83b1d56b4bbe"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "macOS"
+                ],
+                "excludePlatforms": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "9b749e8e-99a7-402f-a8dd-6de37de01531",
+                    "8f70cf54-0294-43d8-8759-5c11896b6a2c",
+                    "669ddac7-0713-4718-a67d-6e220d097d65"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - Office 365 Application Access (All) - Client App - Windows - Require Hybrid Joined",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "exchangeActiveSync",
+                "mobileAppsAndDesktopClients",
+                "other"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "Office365"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "windows"
+                ],
+                "excludePlatforms": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Managed - Apps - Client Office",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "00000009-0000-0000-c000-000000000000",
+                    "475226c6-020e-4fb2-8a90-7a972cbfc1d4",
+                    "7df0a125-d3be-4c96-aa54-591f83ff541c",
+                    "c9a559d2-7aab-4f13-a6ed-e7e9c52aec87",
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "2634dd23-5e5a-431c-81ca-11710d9079f4",
+                    "aa580612-c342-4ace-9055-8edee43ccb89",
+                    "cc15fd57-2c6c-4117-a88c-83b1d56b4bbe",
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "00000004-0000-0ff1-ce00-000000000000"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "android",
+                    "iOS"
+                ],
+                "excludePlatforms": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "approvedApplication"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "TEST Federation - High Risk - Block",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [
+                "high"
+            ],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Intune Application Access - iOS - MFA",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "iOS",
+                    "windows"
+                ],
+                "excludePlatforms": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Block - User - Except on Prem",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "19c18d23-9ce0-4dc9-842f-8078be674497"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "RevProxy - Office",
+        "state": "enabled",
+        "grantControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "a51787db-600d-4b39-9040-b96ae1482398"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "sessionControls": {
+            "disableResilienceDefaults": false,
+            "applicationEnforcedRestrictions": null,
+            "signInFrequency": null,
+            "persistentBrowser": null,
+            "continuousAccessEvaluation": null,
+            "cloudAppSecurity": {
+                "cloudAppSecurityType": "monitorOnly",
+                "isEnabled": true
+            }
+        }
+    },
+    {
+        "displayName": "Dave - Send Guests to CA",
+        "state": "enabled",
+        "grantControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "exchangeActiveSync",
+                "browser",
+                "mobileAppsAndDesktopClients",
+                "other"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "cc15fd57-2c6c-4117-a88c-83b1d56b4bbe"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "sessionControls": {
+            "disableResilienceDefaults": false,
+            "applicationEnforcedRestrictions": null,
+            "signInFrequency": null,
+            "persistentBrowser": null,
+            "continuousAccessEvaluation": null,
+            "cloudAppSecurity": {
+                "cloudAppSecurityType": "mcasConfigured",
+                "isEnabled": true
+            }
+        }
+    },
+    {
+        "displayName": "[SharePoint admin center]Use app-enforced Restrictions for browser access - 2019/10/11",
+        "state": "disabled",
+        "grantControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "00000003-0000-0ff1-ce00-000000000000"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "sessionControls": {
+            "disableResilienceDefaults": false,
+            "cloudAppSecurity": null,
+            "signInFrequency": null,
+            "persistentBrowser": null,
+            "continuousAccessEvaluation": null,
+            "applicationEnforcedRestrictions": {
+                "isEnabled": true
+            }
+        }
+    },
+    {
+        "displayName": "Allow Access from Trusted IPs only (else require MFA)",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "00000004-0000-0ff1-ce00-000000000000",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "00000009-0000-0000-c000-000000000000",
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "499b84ac-1321-427f-aa17-267ca6975798",
+                    "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+                ],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "131d467a-112a-47f8-a840-529434fffa30",
+                    "a28f1416-1f1b-49fb-900f-531c19f90a23",
+                    "1ec5e76d-dc53-4fbb-8166-4901e32f7824",
+                    "85205b6b-efde-4b5d-bc43-54484d7ddd7f"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "2ccfca2e-40e5-4bcd-8d85-592356f44883",
+                    "c25acf62-7c53-46b5-9f6c-9e656941ba26",
+                    "ec4a806e-a138-483e-ac1e-1929d10670a6",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412",
+                    "9b749e8e-99a7-402f-a8dd-6de37de01531",
+                    "8f70cf54-0294-43d8-8759-5c11896b6a2c",
+                    "16ed8415-10d9-4ed1-9860-cc500a906252"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Office 365 Application Access (Office365/Sharepoint/Yammer/Skype/PowerBI) - BYOD Exclude (iOS & Android) - Block",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "00000004-0000-0ff1-ce00-000000000000",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "00000009-0000-0000-c000-000000000000",
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "b5c6adb6-7e8e-4f8a-b8da-92dfbda816a0"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [
+                    "be395f8e-502f-459f-87fa-c599d3c9c7e3"
+                ],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "all"
+                ],
+                "excludePlatforms": [
+                    "android",
+                    "iOS",
+                    "windowsPhone"
+                ]
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "2ccfca2e-40e5-4bcd-8d85-592356f44883",
+                    "c25acf62-7c53-46b5-9f6c-9e656941ba26",
+                    "ec4a806e-a138-483e-ac1e-1929d10670a6",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "[SharePoint admin center]Use app-enforced Restrictions for browser access - 2021/11/26",
+        "state": "disabled",
+        "grantControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "00000003-0000-0ff1-ce00-000000000000"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "sessionControls": {
+            "disableResilienceDefaults": false,
+            "cloudAppSecurity": null,
+            "signInFrequency": null,
+            "persistentBrowser": null,
+            "continuousAccessEvaluation": null,
+            "applicationEnforcedRestrictions": {
+                "isEnabled": true
+            }
+        }
+    },
+    {
+        "displayName": "Office 365 Application Access (Office365/Sharepoint/Yammer/Skype/PowerBI) - Web App (including Windows & macOS) - Non Trusted - Block",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "00000009-0000-0000-c000-000000000000",
+                    "00000004-0000-0ff1-ce00-000000000000"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "e4b9a8bd-dfed-40cc-b9bd-de6609163b98",
+                    "a51787db-600d-4b39-9040-b96ae1482398"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "windows",
+                    "macOS"
+                ],
+                "excludePlatforms": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "ec4a806e-a138-483e-ac1e-1929d10670a6",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Test Azure Dev Desktop",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "00000003-0000-0ff1-ce00-000000000000"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [],
+                "includeGroups": [
+                    "be395f8e-502f-459f-87fa-c599d3c9c7e3"
+                ],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "2ccfca2e-40e5-4bcd-8d85-592356f44883",
+                    "c25acf62-7c53-46b5-9f6c-9e656941ba26"
+                ],
+                "excludeLocations": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Force MFA - PruCorpMobile - Excluding specific Applications",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "00000004-0000-0ff1-ce00-000000000000",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "00000009-0000-0000-c000-000000000000",
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "499b84ac-1321-427f-aa17-267ca6975798",
+                    "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+                ],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "16ed8415-10d9-4ed1-9860-cc500a906252"
+                ],
+                "excludeLocations": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Force MFA - Except On Prem - VSTS",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "499b84ac-1321-427f-aa17-267ca6975798"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Force MFA - Palo - Azure Portal",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "2ccfca2e-40e5-4bcd-8d85-592356f44883",
+                    "c25acf62-7c53-46b5-9f6c-9e656941ba26"
+                ],
+                "excludeLocations": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Block - Except on Prem - Apps - Web",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "94eace2b-3fbd-43e1-9244-f29c9eba5b12"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Block - Except on Prem - Apps - Client",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "94eace2b-3fbd-43e1-9244-f29c9eba5b12"
+                ],
+                "excludeApplications": [
+                    "157c8c57-a1be-4580-bdc4-e44d46ff1f56"
+                ],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "5e86cd17-deb5-4200-97f3-c25c67c4b44d",
+                    "40e502c1-d1ef-4ca0-a964-0fe63ccd50ad",
+                    "5011669c-efd6-4ddd-b648-6e8bf40c1ccb",
+                    "30b2b856-45bb-4bf7-9c32-f8a9177e7208",
+                    "9be7f7d8-51e0-466e-8952-44b30c35d412"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Block - Apps - Client - Legacy Auth",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "other"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [
+                    "157c8c57-a1be-4580-bdc4-e44d46ff1f56",
+                    "c9005da2-023d-40f1-a17a-2b7d91af4ede"
+                ],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "260e8831-191d-4259-9175-d53abc8f36eb",
+                    "1ec5e76d-dc53-4fbb-8166-4901e32f7824",
+                    "e4b9a8bd-dfed-40cc-b9bd-de6609163b98",
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "c0ddfc40-39ec-4e87-860c-16923581c5b3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "Office 365 Application Access (Office365/Sharepoint/Yammer/Skype/PowerBI) - Web App (excluding Windows & macOS) - Block",
+        "state": "disabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "09abbdfd-ed23-44ee-a2d9-a627aa1c90f3",
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000003-0000-0ff1-ce00-000000000000",
+                    "00000005-0000-0ff1-ce00-000000000000",
+                    "00000009-0000-0000-c000-000000000000",
+                    "00000004-0000-0ff1-ce00-000000000000"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "windows",
+                    "macOS"
+                ],
+                "excludePlatforms": [
+                    "windows",
+                    "macOS"
+                ]
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "100 - ALL - Admin protection - All apps: Require MFA For M365 admins",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [],
+                "includeGroups": [
+                    "cafda404-1a8d-4933-acce-ffece7675c10"
+                ],
+                "excludeGroups": [
+                    "9e8d9881-8439-4786-8af3-d914f2be3b92",
+                    "196cf28f-3580-4b0b-b9cd-d8bafffa30b2",
+                    "b51a93b1-5031-480b-8758-984754c3281b",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [
+                    "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                    "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                    "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                    "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                    "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                    "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                    "3edaf663-341e-4475-9f94-5c398ef6c070",
+                    "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                    "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                    "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                    "158c047a-c907-4556-b7ef-446551a6b5f7",
+                    "7698a772-787b-4ac8-901f-60d6b08affd2",
+                    "17315797-102d-40b4-93e0-432062caca18",
+                    "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                    "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                    "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                    "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                    "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                    "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                    "44367163-eba1-44c3-98af-f5787879f96a",
+                    "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                    "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                    "62e90394-69f5-4237-9190-012177145e10",
+                    "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                    "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                    "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                    "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                    "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                    "74ef975b-6605-40af-a5d2-b9539d836353",
+                    "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                    "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                    "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                    "2b745bdf-0803-4d80-aa65-822c4493daac",
+                    "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                    "a9ea8996-122f-4c74-9520-8edcd192826c",
+                    "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                    "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                    "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                    "4a5d8f65-41da-4de4-8968-e035b65339cf",
+                    "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                    "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                    "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                    "5d6b6bb7-de71-4623-b4af-96380a352509",
+                    "f023fd81-a637-4b56-95fd-791ac0226033",
+                    "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                    "75941009-915a-4869-abe7-691bff18279e",
+                    "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                    "f70938a0-fc10-4177-9e90-2178f8765737",
+                    "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                    "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                    "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                    "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                    "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                    "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                    "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                    "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                    "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                    "31e939ad-9672-4796-9c2e-873181342d2d",
+                    "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                    "9360feb5-f418-4baa-8175-e2a00bac4301"
+                ],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "101 - ALL - Admin protection - All apps: Require trusted device For M365 admins",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [],
+                "includeGroups": [
+                    "cafda404-1a8d-4933-acce-ffece7675c10"
+                ],
+                "excludeGroups": [
+                    "6bb26e60-d8e2-4df6-adf8-7dad10fe8411",
+                    "f9f7903a-c0f3-4c88-8dcd-767f39cb8879",
+                    "b51a93b1-5031-480b-8758-984754c3281b",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [
+                    "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                    "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                    "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                    "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                    "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                    "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                    "3edaf663-341e-4475-9f94-5c398ef6c070",
+                    "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                    "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                    "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                    "158c047a-c907-4556-b7ef-446551a6b5f7",
+                    "7698a772-787b-4ac8-901f-60d6b08affd2",
+                    "17315797-102d-40b4-93e0-432062caca18",
+                    "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                    "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                    "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                    "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                    "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                    "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                    "44367163-eba1-44c3-98af-f5787879f96a",
+                    "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                    "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                    "62e90394-69f5-4237-9190-012177145e10",
+                    "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                    "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                    "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                    "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                    "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                    "74ef975b-6605-40af-a5d2-b9539d836353",
+                    "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                    "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                    "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                    "2b745bdf-0803-4d80-aa65-822c4493daac",
+                    "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                    "a9ea8996-122f-4c74-9520-8edcd192826c",
+                    "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                    "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                    "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                    "4a5d8f65-41da-4de4-8968-e035b65339cf",
+                    "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                    "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                    "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                    "5d6b6bb7-de71-4623-b4af-96380a352509",
+                    "f023fd81-a637-4b56-95fd-791ac0226033",
+                    "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                    "75941009-915a-4869-abe7-691bff18279e",
+                    "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                    "f70938a0-fc10-4177-9e90-2178f8765737",
+                    "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                    "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                    "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                    "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                    "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                    "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                    "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                    "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                    "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                    "31e939ad-9672-4796-9c2e-873181342d2d",
+                    "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                    "9360feb5-f418-4baa-8175-e2a00bac4301"
+                ],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "compliantDevice",
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "102 - ALL - Admin protection - All apps: Block access For M365 admins When on untrusted location",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [],
+                "includeGroups": [
+                    "cafda404-1a8d-4933-acce-ffece7675c10"
+                ],
+                "excludeGroups": [
+                    "70b24c0c-2cbf-4695-8d21-58be17cd5c8d",
+                    "56545524-af2b-42d7-a217-07bf54b7a479",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [
+                    "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                    "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                    "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                    "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                    "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                    "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                    "3edaf663-341e-4475-9f94-5c398ef6c070",
+                    "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                    "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                    "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                    "158c047a-c907-4556-b7ef-446551a6b5f7",
+                    "7698a772-787b-4ac8-901f-60d6b08affd2",
+                    "17315797-102d-40b4-93e0-432062caca18",
+                    "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                    "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                    "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                    "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                    "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                    "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                    "44367163-eba1-44c3-98af-f5787879f96a",
+                    "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                    "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                    "62e90394-69f5-4237-9190-012177145e10",
+                    "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                    "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                    "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                    "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                    "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                    "74ef975b-6605-40af-a5d2-b9539d836353",
+                    "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                    "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                    "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                    "2b745bdf-0803-4d80-aa65-822c4493daac",
+                    "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                    "a9ea8996-122f-4c74-9520-8edcd192826c",
+                    "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                    "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                    "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                    "4a5d8f65-41da-4de4-8968-e035b65339cf",
+                    "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                    "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                    "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                    "5d6b6bb7-de71-4623-b4af-96380a352509",
+                    "f023fd81-a637-4b56-95fd-791ac0226033",
+                    "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                    "75941009-915a-4869-abe7-691bff18279e",
+                    "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                    "f70938a0-fc10-4177-9e90-2178f8765737",
+                    "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                    "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                    "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                    "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                    "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                    "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                    "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                    "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                    "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                    "31e939ad-9672-4796-9c2e-873181342d2d",
+                    "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                    "9360feb5-f418-4baa-8175-e2a00bac4301"
+                ],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "AllTrusted"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "104 - ALL - Admin protection - Privileged systems: Require MFA",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "f75cae52-d5b7-4281-9dfd-081c9c4d585c",
+                    "fcd7f44e-4eb5-45d3-918a-d65162b5016b",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "105 - ALL - Admin protection - Privileged systems: Require trusted device",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "58b37d3e-3876-4750-98f6-a9567e015eb1",
+                    "2c80552c-6d8c-48d7-8e56-c3504eeb66fd",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "compliantDevice",
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "106 - ALL - Admin protection - Privileged systems: Block access When on untrusted location",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "893b5dc3-8438-4610-901d-659ae7d90aad",
+                    "a5650c75-762e-4a33-baef-ee6721a6c049",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "AllTrusted"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "200 - ALL - Base protection - All apps: Require MFA or trusted device or trusted location",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "59ceb10f-4720-4640-a1c3-e35e8e8d799a",
+                    "31dc1c50-8c75-423c-b637-73ec3b7de95c",
+                    "b51a93b1-5031-480b-8758-984754c3281b",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "AllTrusted"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa",
+                "compliantDevice",
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "201 - ALL - Base protection - Register security information: Require MFA or trusted device or trusted location For internal users",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [],
+                "excludeApplications": [],
+                "includeUserActions": [
+                    "urn:user:registersecurityinfo"
+                ],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "3233d631-aab6-49bf-8252-9bafcd1aba7c",
+                    "29908778-8fb8-40b8-a1f3-903467230d17",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "AllTrusted"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa",
+                "compliantDevice",
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "204 - ALL - Base protection - All apps: Require MFA For licensed users When medium or above sign-in risk is detected",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [
+                "medium",
+                "high"
+            ],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [],
+                "includeGroups": [
+                    "aa7bc62c-a38a-4de3-a8fe-055327bc9b02"
+                ],
+                "excludeGroups": [
+                    "ca811443-1d7e-4c9f-aa1c-4524180d6ad6",
+                    "aa7912c8-d777-40ea-9485-3c63ae1695c8",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "207 - ALL - Base protection - All apps: Require password change For licensed users When high user risk is detected",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [
+                "high"
+            ],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "all"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [],
+                "includeGroups": [
+                    "aa7bc62c-a38a-4de3-a8fe-055327bc9b02"
+                ],
+                "excludeGroups": [
+                    "c4ee7d4d-7c94-47ab-b080-ba8ba899e7df",
+                    "bf452868-489f-44a9-99a3-ea7dcdfefbdb",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "AND",
+            "builtInControls": [
+                "mfa",
+                "passwordChange"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "300 - ALL - Attack surface reduction - All apps: Block access When using legacy authentication",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "other"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "a495db3c-1757-4b16-9107-520693c3f26f",
+                    "5bfe0ef0-adf5-4d89-8824-afbac43cb45c",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "301 - ALL - Attack surface reduction - All apps: Block access When using active sync",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "exchangeActiveSync"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "ca99aaad-7c46-4eed-8492-60788444f01a",
+                    "07be732f-4288-454d-801d-b5368934e697",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "302 - ALL - Attack surface reduction - All apps: Block access When using unknown or unsupported device platforms",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "6190b5d8-5bfc-4246-9fe3-bc692510986c",
+                    "ce727c5e-9ba0-4373-9d12-8c15bb4b0f7e",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "all"
+                ],
+                "excludePlatforms": [
+                    "android",
+                    "iOS",
+                    "windows",
+                    "macOS"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "400 - ALL - Application protection - Specific apps: Require MFA",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "None"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "04f76e35-dca3-439e-b249-efb7f9842f4e",
+                    "35d2376e-f895-4bc2-a369-956dbe6d9c19",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "401 - ALL - Application protection - Specific apps: Require trusted device",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "None"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "2722df83-8164-4f91-a9ec-4381ffa58bae",
+                    "7178f0ae-a215-4f30-a4b6-18de7149ae51",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "compliantDevice",
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "402 - ALL - Application protection - Specific apps: Block access When on untrusted location",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "None"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "68fdea7e-1df4-4c9b-b468-5b41673e5ef8",
+                    "2955004e-6cad-4dbe-bca2-b84943efe01e",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "locations": {
+                "includeLocations": [
+                    "All"
+                ],
+                "excludeLocations": [
+                    "AllTrusted"
+                ]
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "block"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "407 - ALL - Application protection - Specific apps: Require MFA For licensed users When low or above sign-in risk is detected",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [
+                "low",
+                "medium",
+                "high"
+            ],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "None"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [],
+                "excludeUsers": [],
+                "includeGroups": [
+                    "aa7bc62c-a38a-4de3-a8fe-055327bc9b02"
+                ],
+                "excludeGroups": [
+                    "cabeffb2-d2cc-42d8-ad1a-6d5f347c7351",
+                    "518dd191-c332-4e93-9af9-7ed720ca0013",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "500 - ALL - Data protection - All apps: No persistent browser session When on untrusted device",
+        "state": "enabledForReportingButNotEnforced",
+        "grantControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "09fdd0ff-f31d-4339-beca-a5f39265765b",
+                    "3b729880-8f68-48f3-8086-3d27ee41b2d1",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "devices": {
+                "includeDeviceStates": [],
+                "excludeDeviceStates": [],
+                "includeDevices": [
+                    "All"
+                ],
+                "excludeDevices": [
+                    "Compliant",
+                    "DomainJoined"
+                ],
+                "deviceFilter": null
+            }
+        },
+        "sessionControls": {
+            "disableResilienceDefaults": false,
+            "applicationEnforcedRestrictions": null,
+            "cloudAppSecurity": null,
+            "signInFrequency": null,
+            "continuousAccessEvaluation": null,
+            "persistentBrowser": {
+                "mode": "never",
+                "isEnabled": true
+            }
+        }
+    },
+    {
+        "displayName": "501 - ALL - Data protection - All apps: Short Sign-in frequency When on untrusted device",
+        "state": "enabledForReportingButNotEnforced",
+        "grantControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser",
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "b040e3be-a41f-4958-a77a-e2fb0d390063",
+                    "23d1e2be-f32d-4c9c-8f2d-ec471aeff154",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "devices": {
+                "includeDeviceStates": [],
+                "excludeDeviceStates": [],
+                "includeDevices": [
+                    "All"
+                ],
+                "excludeDevices": [
+                    "Compliant",
+                    "DomainJoined"
+                ],
+                "deviceFilter": null
+            }
+        },
+        "sessionControls": {
+            "disableResilienceDefaults": false,
+            "applicationEnforcedRestrictions": null,
+            "cloudAppSecurity": null,
+            "persistentBrowser": null,
+            "continuousAccessEvaluation": null,
+            "signInFrequency": {
+                "value": 1,
+                "type": "hours",
+                "isEnabled": true
+            }
+        }
+    },
+    {
+        "displayName": "502 - ALL - Data protection - O365: Require app protection policy or approved client app When using modern authentication clients on iOS or Android",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "Office365"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "74dab8ed-7a35-4737-8a34-d0fd3abf3b9c",
+                    "7367c210-12c3-47a2-a83b-f76bab7fadb7",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "android",
+                    "iOS"
+                ],
+                "excludePlatforms": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "compliantApplication",
+                "approvedApplication"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "504 - ALL - Data protection - O365: Require trusted device When using modern authentication clients on Windows and macOS",
+        "state": "enabledForReportingButNotEnforced",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "mobileAppsAndDesktopClients"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "Office365"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "749e17bb-683a-4fce-ad60-7540b5a40ce2",
+                    "0cb0a499-72e5-4df0-8c10-d48fff27c6db",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "platforms": {
+                "includePlatforms": [
+                    "windows",
+                    "macOS"
+                ],
+                "excludePlatforms": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "compliantDevice",
+                "domainJoinedDevice"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "505 - ALL - Data protection - O365: Use app enforced restrictions When using a browser on untrusted devices",
+        "state": "enabledForReportingButNotEnforced",
+        "grantControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "browser"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "Office365"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "All"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [
+                    "567d463a-50fa-4885-999b-01c645df8f3a",
+                    "0b6b13d1-f40e-41eb-bba7-718cb82c80de",
+                    "b03838a8-a0e1-4828-90be-461ebc5477d3"
+                ],
+                "includeRoles": [],
+                "excludeRoles": []
+            },
+            "devices": {
+                "includeDeviceStates": [],
+                "excludeDeviceStates": [],
+                "includeDevices": [
+                    "All"
+                ],
+                "excludeDevices": [
+                    "Compliant",
+                    "DomainJoined"
+                ],
+                "deviceFilter": null
+            }
+        },
+        "sessionControls": {
+            "disableResilienceDefaults": false,
+            "cloudAppSecurity": null,
+            "signInFrequency": null,
+            "persistentBrowser": null,
+            "continuousAccessEvaluation": null,
+            "applicationEnforcedRestrictions": {
+                "isEnabled": true
+            }
+        }
+    },
+    {
+        "displayName": "Merge1",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "all"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "b56ad6ad-441f-4e4e-8d06-d942ab04f858"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "23a34dc8-2dde-419d-8f7e-f9c69946df5d"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        }
+    },
+    {
+        "displayName": "GuestAccess-AUP",
+        "state": "enabled",
+        "sessionControls": null,
+        "conditions": {
+            "userRiskLevels": [],
+            "signInRiskLevels": [],
+            "clientAppTypes": [
+                "all"
+            ],
+            "servicePrincipalRiskLevels": [],
+            "platforms": null,
+            "locations": null,
+            "deviceStates": null,
+            "devices": null,
+            "clientApplications": null,
+            "applications": {
+                "includeApplications": [
+                    "cc15fd57-2c6c-4117-a88c-83b1d56b4bbe"
+                ],
+                "excludeApplications": [],
+                "includeUserActions": [],
+                "includeAuthenticationContextClassReferences": []
+            },
+            "users": {
+                "includeUsers": [
+                    "GuestsOrExternalUsers"
+                ],
+                "excludeUsers": [],
+                "includeGroups": [],
+                "excludeGroups": [],
+                "includeRoles": [
+                    "95e79109-95c0-4d8e-aee3-d01accf2d47b"
+                ],
+                "excludeRoles": []
+            }
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [],
+            "customAuthenticationFactors": [],
+            "termsOfUse": [
+                "97acc761-74fa-4e19-8d54-d0059d31cb87"
+            ]
+        }
+    }
+]
