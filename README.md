@@ -30,3 +30,5 @@ https://github.com/Azure-Samples/azure-ad-conditional-access-apis
 
 # prompting for admin consent
 https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-sign-in-unexpected-user-consent-error#requesting-not-authorized-permissions-error
+
+test
